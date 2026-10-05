@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|c:\\users\\muhammed.hossny\\source\\repos\\library_system_practice\\library_system_practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|solutionrelative:library_system_practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|c:\\users\\muhammed.hossny\\source\\repos\\library_system_practice\\library_system_practice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|solutionrelative:library_system_practice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|c:\\users\\muhammed.hossny\\source\\repos\\library_system_practice\\library_system_practice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE49A694-BF28-4C9F-B132-9EF287CFBC32}|LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE.csproj|solutionrelative:library_system_practice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20261005113241_Init Migration.cs",
+              "DocumentMoniker": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs",
+              "RelativeDocumentMoniker": "LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs",
+              "ToolTip": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs",
+              "RelativeToolTip": "LIBRARY_SYSTEM_PRACTICE\\Migrations\\20261005113241_Init Migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T11:32:41.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\appsettings.json",
+              "RelativeDocumentMoniker": "LIBRARY_SYSTEM_PRACTICE\\appsettings.json",
+              "ToolTip": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\appsettings.json",
+              "RelativeToolTip": "LIBRARY_SYSTEM_PRACTICE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-05T11:29:53.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LIBRARY_SYSTEM_PRACTICE\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "LIBRARY_SYSTEM_PRACTICE\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAtwEcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T11:27:56.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Program.cs",
+              "RelativeDocumentMoniker": "LIBRARY_SYSTEM_PRACTICE\\Program.cs",
+              "ToolTip": "C:\\Users\\Muhammed.Hossny\\source\\repos\\LIBRARY_SYSTEM_PRACTICE\\LIBRARY_SYSTEM_PRACTICE\\Program.cs",
+              "RelativeToolTip": "LIBRARY_SYSTEM_PRACTICE\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T11:27:51.51Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

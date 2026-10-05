@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LIBRARY_SYSTEM_PRACTICE.props" />
+</Project>
