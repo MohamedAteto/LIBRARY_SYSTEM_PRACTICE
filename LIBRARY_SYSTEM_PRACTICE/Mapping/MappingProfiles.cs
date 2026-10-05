@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using LIBRARY_SYSTEM_PRACTICE.DTOs.BookDTOs;
+using LIBRARY_SYSTEM_PRACTICE.DTOs.CategoryDTOs;
+using LIBRARY_SYSTEM_PRACTICE.DTOs.MemberDTOs;
 using LIBRARY_SYSTEM_PRACTICE.Models;
 
 namespace LIBRARY_SYSTEM_PRACTICE.Mapping
@@ -8,8 +10,22 @@ namespace LIBRARY_SYSTEM_PRACTICE.Mapping
     {
         public MappingProfiles()
         {
-            CreateMap<Models.Book, BookDTO>().ReverseMap();
+            CreateMap<Book, BookDTO>().ReverseMap();
             CreateMap<Book, CreateBookDTO>().ReverseMap();
+
+            CreateMap<Category, CategoryDTO>()
+                .ForMember(s => s.BookCount, m => m.MapFrom(n => n.Books.Count));
+
+            CreateMap<Category, CreateCategoryDTO>().ReverseMap();
+
+
+
+            CreateMap<Member, MemberDTO>()
+                .ForMember(s => s.MemberBookcount, m => m.MapFrom(b => b.Borrowings.Count));
+
+            CreateMap<Member, CreateMemberDTO>().ReverseMap();
+
+
 
 
        

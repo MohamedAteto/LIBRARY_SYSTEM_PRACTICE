@@ -8,12 +8,17 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Implemntation
     {
         private readonly AppDbContext _context; 
         public IBookRepo BookRepo { get; }
+        public ICategoryRepo categoryRepo { get; }
+        public IMemberRepo memberRepo { get; }
 
-        public UnitOfWork(AppDbContext context,IBookRepo bookRepo)
+        public UnitOfWork(AppDbContext context,IBookRepo bookRepo , ICategoryRepo categoryRepoo)
         {
             BookRepo = bookRepo;
             _context = context;
+            categoryRepo = categoryRepoo;
+
         }
+
 
         public void Save()
         {

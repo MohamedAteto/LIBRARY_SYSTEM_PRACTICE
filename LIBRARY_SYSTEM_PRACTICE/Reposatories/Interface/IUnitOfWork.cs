@@ -6,7 +6,10 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface
     {
          IBookRepo BookRepo { get; }
 
-        //ICategoryRepository Categories { get; }
+        ICategoryRepo categoryRepo { get; }
+
+        public IMemberRepo memberRepo { get; }
+
         //IBorrowingRepository Borrowings { get; }
         void Save();
     }

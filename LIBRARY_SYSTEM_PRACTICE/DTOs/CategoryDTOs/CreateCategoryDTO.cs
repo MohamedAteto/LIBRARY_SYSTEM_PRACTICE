@@ -1,10 +1,8 @@
 ﻿namespace LIBRARY_SYSTEM_PRACTICE.DTOs.CategoryDTOs
 {
-    public class CategoryDTO
+    public class CreateCategoryDTO
     {
         public string Name { get; set; } = string.Empty;
         public int BookCount { get; set; }
-
-
     }
 }
