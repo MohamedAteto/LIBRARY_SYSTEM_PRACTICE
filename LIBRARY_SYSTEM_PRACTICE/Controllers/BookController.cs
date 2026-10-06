@@ -56,7 +56,7 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
             if (book == null)
                 return NotFound("No books found.");
 
-            var bookDTO = _mapper.Map<BookDTO>(book);
+            var bookDTO = _mapper.Map<List<BookDTO>>(book);
             return Ok(bookDTO);
         }
 

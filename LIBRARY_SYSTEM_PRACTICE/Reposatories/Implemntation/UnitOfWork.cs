@@ -10,13 +10,17 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Implemntation
         public IBookRepo BookRepo { get; }
         public ICategoryRepo categoryRepo { get; }
         public IMemberRepo memberRepo { get; }
+        public IBorrowRepo BorrowingsRepo { get; }
 
-        public UnitOfWork(AppDbContext context,IBookRepo bookRepo , ICategoryRepo categoryRepoo)
+        public UnitOfWork(AppDbContext context,
+            IBookRepo bookRepo ,
+            ICategoryRepo categoryRepoo,
+            IBorrowRepo borrowRepo)
         {
             BookRepo = bookRepo;
             _context = context;
             categoryRepo = categoryRepoo;
-
+            BorrowingsRepo = borrowRepo;
         }
 
 

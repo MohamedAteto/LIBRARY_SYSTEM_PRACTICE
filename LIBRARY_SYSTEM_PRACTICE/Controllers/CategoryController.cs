@@ -47,7 +47,7 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
             if (items is null)
                 return BadRequest();
 
-            var DTO = _mapper.Map<CategoryDTO>(items);
+            var DTO = _mapper.Map<List<CategoryDTO>>(items);
 
             return Ok(DTO);
         }
@@ -58,7 +58,7 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
             var item = _unit.categoryRepo.GetyId(id);
 
             if (item is null)
-                return BadRequest();
+                return BadRequest("there is not id like this");
 
             _unit.categoryRepo.Delete(id);
             _unit.Save();

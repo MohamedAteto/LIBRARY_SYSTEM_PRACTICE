@@ -8,9 +8,9 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface
 
         ICategoryRepo categoryRepo { get; }
 
-        public IMemberRepo memberRepo { get; }
+        IMemberRepo memberRepo { get; }
 
-        //IBorrowingRepository Borrowings { get; }
+        IBorrowRepo BorrowingsRepo { get; }
         void Save();
     }
 }

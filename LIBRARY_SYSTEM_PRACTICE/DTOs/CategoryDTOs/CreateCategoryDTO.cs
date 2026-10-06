@@ -2,7 +2,8 @@
 {
     public class CreateCategoryDTO
     {
-        public string Name { get; set; } = string.Empty;
+        public string CategoryName { get; set; } = string.Empty;
         public int BookCount { get; set; }
+        public string CategoryDescription { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 using LIBRARY_SYSTEM_PRACTICE.Data;
+using LIBRARY_SYSTEM_PRACTICE.Reposatories.Implemntation;
+using LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IMemberRepo, MemberRepo>();
+builder.Services.AddScoped<IBookRepo, BookRepo>();
+builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
+builder.Services.AddScoped<IBorrowRepo, BorrowRepo>();
+
 
 var app = builder.Build();
 
