@@ -29,9 +29,8 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
             if (items is null)
                 return BadRequest();
 
-            var DTO = _mapper.Map<MemberDTO>(items);
 
-            return Ok(DTO);
+            return Ok(items);
 
         }
 
@@ -44,9 +43,8 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
             if (items is null)
                 return BadRequest();
 
-            var DTO = _mapper.Map<MemberDTO>(items);
 
-            return Ok(DTO);
+            return Ok(items);
 
         }
 

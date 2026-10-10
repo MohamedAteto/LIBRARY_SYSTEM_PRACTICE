@@ -11,13 +11,8 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Implemntation
         {
             _context = context;
         }
-        public ICollection<Book> Getsearch_keyword_from_the_user_Search_for_books_whose_Title_or_Author()
+        public ICollection<Book> Getsearch_keyword_from_the_user_Search_for_books_whose_Title_or_Author(string keyword)
         {
-
-            Console.WriteLine("Enter a keyword to search for books by title or author:");
-            string keyword = Console.ReadLine();
-
-
             var books = _context.Books
                 .Where(b => b.Title.Contains(keyword) || b.Author.Contains(keyword))
                 .OrderBy(b => b.Title)

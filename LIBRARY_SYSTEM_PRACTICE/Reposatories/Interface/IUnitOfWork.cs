@@ -11,6 +11,8 @@ namespace LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface
         IMemberRepo memberRepo { get; }
 
         IBorrowRepo BorrowingsRepo { get; }
+
+        IUserRepo userRepo { get; }
         void Save();
     }
 }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\LIBRARY_SYSTEM_PRACTICE.props" />
-</Project>

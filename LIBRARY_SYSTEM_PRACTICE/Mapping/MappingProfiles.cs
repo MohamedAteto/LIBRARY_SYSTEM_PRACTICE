@@ -24,7 +24,7 @@ namespace LIBRARY_SYSTEM_PRACTICE.Mapping
 
 
             CreateMap<Member, MemberDTO>()
-                .ForMember(s => s.MemberBookcount, m => m.MapFrom(b => b.Borrowings.Count));
+                .ForMember(s => s.MemberBookcount, m => m.MapFrom(b => b.Borrowings.Count ));
 
             CreateMap<Member, CreateMemberDTO>().ReverseMap();
 

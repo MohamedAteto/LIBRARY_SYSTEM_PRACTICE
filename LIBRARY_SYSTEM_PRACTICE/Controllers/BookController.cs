@@ -6,6 +6,7 @@ using LIBRARY_SYSTEM_PRACTICE.Models;
 using LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace LIBRARY_SYSTEM_PRACTICE.Controllers
 {
@@ -37,9 +38,9 @@ namespace LIBRARY_SYSTEM_PRACTICE.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll(string name)
         {
-            var books = _unit.BookRepo.Getsearch_keyword_from_the_user_Search_for_books_whose_Title_or_Author();
+            var books = _unit.BookRepo.Getsearch_keyword_from_the_user_Search_for_books_whose_Title_or_Author(name);
 
             if(books == null || !books.Any())
                 return NotFound("No books found.");

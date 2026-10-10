@@ -12,6 +12,7 @@ namespace LIBRARY_SYSTEM_PRACTICE.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Borrowing> Borrowings { get; set; }
         public DbSet<Member> Members { get; set; }
+        public DbSet<User> users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

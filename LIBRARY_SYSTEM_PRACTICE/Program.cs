@@ -1,13 +1,83 @@
+using System.Drawing.Imaging;
+using System.Text;
 using LIBRARY_SYSTEM_PRACTICE.Data;
 using LIBRARY_SYSTEM_PRACTICE.Reposatories.Implemntation;
 using LIBRARY_SYSTEM_PRACTICE.Reposatories.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1" , new OpenApiInfo { Title = "JWTs" , Version = "v1"});
+
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please Enter token in format **' Bearer {Your jwt token}' **",
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey
+    });
+
+
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id= "Bearer"
+                }
+            },
+
+            new string[]{}
+        }
+    }); 
+
+
+
+});
 builder.Services.AddControllers();
+
+var Key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]));
+
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+ .AddJwtBearer( o =>
+ {
+     o.RequireHttpsMetadata = false;
+     o.SaveToken = true;
+     o.TokenValidationParameters = new TokenValidationParameters
+     {
+         ValidateIssuerSigningKey = true,
+         ValidateIssuer = true,
+         ValidateAudience = true,
+         ValidateLifetime = true,
+
+         ValidIssuer = builder.Configuration["Jwt:Issuer"],
+         ValidAudience = builder.Configuration["Jwt:Audience"],
+         IssuerSigningKey = Key
+     };
+ });        
+
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -20,6 +90,7 @@ builder.Services.AddScoped<IMemberRepo, MemberRepo>();
 builder.Services.AddScoped<IBookRepo, BookRepo>();
 builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 builder.Services.AddScoped<IBorrowRepo, BorrowRepo>();
+builder.Services.AddScoped<IUserRepo, UserRepo>();
 
 
 var app = builder.Build();
@@ -32,9 +103,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
